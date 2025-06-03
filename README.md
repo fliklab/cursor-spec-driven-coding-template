@@ -1,13 +1,13 @@
-# How to Make a Project from This Template
+# 이 템플릿에서 프로젝트 생성하는 방법
 
-To create a new project from this template, follow these steps:
+이 템플릿에서 새로운 프로젝트를 생성하려면 다음 단계를 따르세요:
 
-1. **Go to the Template Repository**: Navigate to the [vibe-code-template repository](https://github.com/fliklab/vibe-code-template) on GitHub.
+1. **템플릿 저장소로 이동**: GitHub에서 [vibe-code-template 저장소](https://github.com/fliklab/vibe-code-template)로 이동합니다.
 
-2. **Use This Template**: Click on the "Use this template" button, which is located above the file list.
+2. **이 템플릿 사용**: 파일 목록 위에 있는 "Use this template" 버튼을 클릭합니다.
 
-3. **Create a New Repository**: Fill in the details for your new repository, such as the repository name, description, and choose whether it should be public or private.
+3. **새 저장소 생성**: 새 저장소의 이름, 설명을 입력하고 공개 또는 비공개 여부를 선택합니다.
 
-4. **Create Repository**: Click the "Create repository from template" button to generate your new project.
+4. **저장소 생성**: "Create repository from template" 버튼을 클릭하여 새 프로젝트를 생성합니다.
 
-Your new repository will be created with the same files and structure as the template, and you can start working on your project immediately.
+새 저장소는 템플릿과 동일한 파일 및 구조로 생성되며, 즉시 프로젝트 작업을 시작할 수 있습니다.

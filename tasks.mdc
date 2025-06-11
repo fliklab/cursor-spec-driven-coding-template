@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: false
 ---
 ## 1단계: 프로젝트 준비 및 초기 설정
@@ -10,6 +10,8 @@ alwaysApply: false
 - [ ] 위험 관리 계획 수립
 - [ ] 기술 스택 및 개발 환경 선정
 - [ ] 버전 관리 시스템 설정 (예: Git Repository 생성)
+- [x] GitHub 레포지토리를 템플릿으로 설정
+- [ ] GitHub API를 사용하여 비공개 저장소 생성 및 프로젝트 업로드
 - [ ] 프로젝트 디렉토리 구조 설정
 
 ## 2단계: 요구사항 분석 및 설계

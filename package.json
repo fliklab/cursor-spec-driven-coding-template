@@ -1,0 +1,19 @@
+{
+  "name": "create-vibe-code-template",
+  "version": "1.0.0",
+  "description": "Create a new project from the vibe-code-template",
+  "main": "index.js",
+  "bin": {
+    "create-vibe-code-template": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "boilerplate"
+  ],
+  "author": "fliklab",
+  "license": "MIT",
+  "dependencies": {}
+}

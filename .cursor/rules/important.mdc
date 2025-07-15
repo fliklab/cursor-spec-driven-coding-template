@@ -1,15 +1,26 @@
 ---
-description: 
-globs: 
+description: When any status
+globs:
 alwaysApply: true
 ---
 
-@important 
-- 모든 작업은 `instructions/tasks.md`에 있는 todo list에 근거하여 다음 진행할 작업을 선정 후 진행하며, 완료 후에는 완료를 표시해야 합니다.
-- 매 실행마다 ToDo의 진행 상황 체크, 완료된 작업은 `done/td{nn}-work-description.md`에 작업내역/트러블슈팅을 기록하고 커밋으로 남깁니다.
-- Test Code가 충족하도록 해주세요.
-- 주요한 트러블슈팅 내용이 발생한다면 `done/ts{nn}-trouble-description.md`를 만들어서 단독으로 기록해주세요.
-- Todo list의 스프린트 1개당 1개 이상의 커밋을 적절한 단위로 남겨야 합니다.
-- *모든 문서(`.cursor/rules/requirements.mdc`, `instructions/architecture.md`, `instructions/tasks.md`, `test.mdc`)는 커밋 하기 전에 항상 다시 검토하고 추가/수정이 필요한 내용이 있다면 업데이트 합니다.
+@important
+
+작업방식
+
+- 모든 작업은 `.cursor/instructions/tasks.md`에 있는 todo list에 근거하여 다음 진행할 작업을 선정 후 진행하며, 완료 후에는 완료를 표시 후 커밋을 남겨야 합니다.
+- 커밋은 type(scope):내용 형식, 20자 이내로 작업의 의도가 드러나게 작성합니다. 설명은 두 줄 띄우고 40자 이내로 간단히 작성합니다. (금지어: 완료, 완벽, 고급, task, sprint 를 비롯한 유사어 모두 금지)
+- 실행 시마다 Todo 진행 상황을 확인하고, 완료된 작업은 .cursor/done/td{nn}-work-description.md에 기록 후 커밋합니다.
+- Todo list의 스프린트별로 최소 1개 이상의 의미 있는 커밋을 남깁니다.
+- 트러블슈팅 내용이 발생한다면 `.cursor/done/ts{nn}-trouble-description.md`를 만들어서 단독으로 기록해주세요.
+- 문서(`.cursor/rules/requirements.mdc`, `.cursor/rules/architecture.md`, `.cursor/rules/tasks.md`, `cursor/rules/test.mdc`)는 커밋 하기 전에 항상 재검토하고 필요시 업데이트 합니다.
 - 이 원칙을 어길 경우, 작업 중단 및 회고 후 재진행합니다.
-- 반드시 컴포넌트는 Atomic 한 단위로 재사용 가능하게 작성하며 type, utils, style 등을 분리하여 작성하여 코드의 가독성과 품질을 유지하세요.
+- Test Code를 작성하고, 테스트 코드가 통과하도록 합니다.
+
+설계원칙
+
+- 핵심 UI와 로직을 분리해 핵심 흐름이 명확히 하세요 → 컴포넌트(UI) + 커스텀 훅(로직) + 유틸 함수(계산) 구조로 분리 권장.
+- 재사용 가능한 코드는 관심사별로 모아서 관리하세요 → hooks, utils, types, 등 기능 단위 폴더 권장.
+- 컴포넌트는 시각적, 기능적 단위로 나눠 작게 유지하세요 (보통 100줄 이내) (ex. List와 ListItem, Modal과 ModalContent를 분리)
+- 파일 하나에 한 가지 역할만 가집니다. → 로딩, 포맷, 필터링 같은 로직은 꼭 util로 추출하고 내부 함수 작성을 최소화합니다.
+- UI 코드에서는 주요 흐름(렌더 조건, 데이터 구조)이 한눈에 보이도록 구성하세요 → return 근처는 변수 선언 없이 깔끔하게 유지

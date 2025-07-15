@@ -1,0 +1,16 @@
+---
+description: When any task is done or after any commit
+globs:
+alwaysApply: false
+---
+
+## 작업의 시작
+
+프로젝트 초기 요구사항을 확인하고 requirement -> architecture -> task 를 작성하는 과정
+
+- [ ] requirement.mdc 구체화 및 기록
+- [ ] architecture.mdc 구체화 및 기록
+- [ ] tasks.mdc 구체화 및 기록
+- [ ] 사용자의 flavor에 따라 필요시 important를 업데이트
+- [ ] 초기 readme.md 작성.
+- [ ] 전체 진행 상황 점검.

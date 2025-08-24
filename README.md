@@ -4,7 +4,7 @@
 
 ## 1. Github.com에서 생성하는 방법
 
-1. **템플릿 저장소로 이동**: GitHub에서 [vibe-code-template 저장소](https://github.com/fliklab/vibe-code-template)로 이동합니다.
+1. **템플릿 저장소로 이동**: GitHub에서 [cursor-spec-driven-coding-template 저장소](https://github.com/fliklab/cursor-spec-driven-coding-template)로 이동합니다.
 
 2. **이 템플릿 사용**: 파일 목록 위에 있는 "Use this template" 버튼을 클릭합니다.
 
